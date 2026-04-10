@@ -244,7 +244,7 @@ Aligned with the assessment brief:
 | 7. Cost / scale / feasibility | COST / SCALE / FEASIBILITY |
 | 8. Limitations | LIMITATIONS |
 | Trade-offs & “what next” | WHAT I WOULD BUILD NEXT; NOTES.md |
-| Example output | example_output/ and fresh runs under `output/` (gitignored) |
+| Example output | `example_output/example.json`, `example_report.html`, and `example_query_education_texas.json` (education + Texas + hiring query). Fresh runs write to `output/` (gitignored). |
 
 **Messiness handling:** Retries on Tavily (in `utils/search.py`), ProPublica search fallbacks and 404 handling (`utils/propublica.py`, `main.py`), Gemini rate-limit retries (`utils/gemini_llm.py`), conservative LLM scoring when signals are weak.
 
