@@ -3,7 +3,7 @@ Fuller Focus Signal Agent
 During our call you described two problems that stuck with me : buying signals not being insightful enough,
 and nonprofit contact data being outdated. This agent was built around both.
 
-Before reading anything else, open example_output/example_report.html in your browser.
+Before reading anything else, open example_output/example_report.html in your browser to understand the output better
 
 ---
 
@@ -233,25 +233,15 @@ Email sending is an explicit opt-in action.
 
 ---
 
-SUBMISSION CHECKLIST (FULLER FOCUS TAKE-HOME)
 
-Aligned with the assessment brief:
+**Messiness handling:** Retries on Tavily (in `utils/search.py`),
 
-| Requirement | Where |
-| ----------- | ----- |
-| 1. Problem statement | PROBLEM STATEMENT |
-| 2. Value | VALUE |
-| 3. Why this approach | WHY THIS APPROACH |
-| 4. MVP (V1 shipped) | METHODOLOGY + SETUP + repo code |
-| 5. Methodology | METHODOLOGY |
-| 6. Tools & tech | TOOLS AND TECH |
-| 7. Cost / scale / feasibility | COST / SCALE / FEASIBILITY |
-| 8. Limitations | LIMITATIONS |
-| Trade-offs & “what next” | WHAT I WOULD BUILD NEXT; NOTES.md |
-| Example output | `example_output/example.json`, `example_report.html`, and `example_query_education_texas.json` (education + Texas + hiring query). Fresh runs write to `output/` (gitignored). |
+ProPublica search fallbacks and 404 handling (`utils/propublica.py`, `main.py`),
 
-**Messiness handling:** Retries on Tavily (in `utils/search.py`), ProPublica search fallbacks and 404 handling (`utils/propublica.py`, `main.py`), Gemini rate-limit retries (`utils/gemini_llm.py`), conservative LLM scoring when signals are weak.
+Gemini rate-limit retries (`utils/gemini_llm.py`), 
 
-**Optional bonus:** SendGrid outreach via `--send-emails` (see BONUS section).
+conservative LLM scoring when signals are weak.
 
 Clone the repo, copy `.env.example` to `.env`, add keys, then run `python main.py --query "..."`.
+
+here is the live screen recording of the agent working if it helps https://drive.google.com/file/d/1tzeqc54TD1TjJovlffsTmVHA4GEXvzax/view?usp=sharing
