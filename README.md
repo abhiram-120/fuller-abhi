@@ -134,9 +134,13 @@ emails, and CSV export. The JSON output maps directly to HubSpot, Airtable, or a
 TOOLS AND TECH
 
 ProPublica Nonprofit Explorer API: free, no key, real 990 data, 1.8M US orgs
+
 Tavily: built for AI agents, handles job board and news searches, free tier 1000/month
+
 Google Gemini (default gemini-2.5-flash): query parsing, signal scoring, email generation
+
 Hunter.io: contact enrichment, free tier 25 lookups/month
+
 Python, requests, python-dotenv
 
 ---
