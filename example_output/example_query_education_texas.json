@@ -1,0 +1,161 @@
+{
+  "query": "Find education nonprofits in Texas hiring development or marketing leadership",
+  "intent": {
+    "sector": "education",
+    "signal": "hiring development or marketing leadership",
+    "location": "Texas"
+  },
+  "timestamp": "20260410_062802",
+  "results": [
+    {
+      "name": "Education",
+      "score": 80,
+      "data_quality": "moderate",
+      "mixed_signal": false,
+      "financial_signal": "Financial trend is unknown, making it difficult to assess investment capacity.",
+      "hiring_signal": "The text emphasizes the importance of 'leadership consulting' and 'talent development' for mission-driven organizations, suggesting a strong internal strategic focus on these areas, which could lead to external agency engagement.",
+      "news_signal": "News reports large grant awards ($50M, $15M) by the Education Department for strategic initiatives like accreditation reform, AI, and workforce training, indicating significant activity and potential for external partnerships in the education sector.",
+      "reasoning": "Despite unknown financial data, the organization's 'hiring' section highlights a clear strategic focus on leadership consulting and talent development, indicating a proactive approach to organizational strength. Furthermore, the news describes substantial grant funding for strategic initiatives within the education sector, suggesting a dynamic environment ripe for external partnerships to support large-scale projects in areas like AI and workforce training. This combination indicates a strong likelihood of seeking external agency support.",
+      "outreach_subject": "Enhancing Leadership & Strategic Initiatives in Education",
+      "outreach_email": "We noted your emphasis on 'leadership consulting' and 'talent development' for mission-driven organizations. News about significant grants for strategic initiatives in areas like AI and workforce training also caught our attention. We believe our expertise could support your strategic development and program outreach.",
+      "contact": {
+        "name": "",
+        "email": "",
+        "title": "",
+        "confidence": "not found"
+      }
+    },
+    {
+      "name": "Champaign County Extension Educatio Education Foundation",
+      "score": 75,
+      "data_quality": "moderate",
+      "mixed_signal": false,
+      "financial_signal": "Financial trend is unknown, making it difficult to assess investment capacity.",
+      "hiring_signal": "Hiring explicitly mentions roles with responsibility for 'marketing and promoting' educational programs and 'development' of content, which are strong indicators for potential external agency need.",
+      "news_signal": "News indicates the expansion of the Illinois 4-H Teen Teachers program through a grant and a local organization receiving a grant to combat child sexual abuse, suggesting active program development and funding acquisition.",
+      "reasoning": "Champaign County Extension Education Foundation has strong hiring signals, explicitly seeking roles responsible for marketing, promotion, and program development. Although revenue trend is unknown, the news of program expansion through grants further indicates growth and a potential need for external support for strategic outreach or development initiatives. This combination suggests a high likelihood of needing an external agency.",
+      "outreach_subject": "Supporting Champaign County Extension's Marketing & Development Initiatives",
+      "outreach_email": "We noted Champaign County Extension Education Foundation's active hiring for roles involving 'marketing and promoting' educational programs and program 'development'. Your news of program expansion through grants further signals a focus on growth. We believe our expertise could enhance these strategic efforts.",
+      "contact": {
+        "name": "",
+        "email": "",
+        "title": "",
+        "confidence": "not found"
+      }
+    },
+    {
+      "name": "African Diasporic Arts And Educatio Education Inc",
+      "score": 35,
+      "data_quality": "strong",
+      "mixed_signal": false,
+      "financial_signal": "Revenue is stable, indicating consistent operational capacity.",
+      "hiring_signal": "Hiring mentions 'Research & Financial Analyst' and 'leadership development' in the context of supporting external programs like Trailblazers Tours, but not clear internal strategic development or marketing leadership roles for the organization itself. Other listed positions refer to AFIDEP or are operational.",
+      "news_signal": "The organization received two grants, which is positive. However, news also focuses on sharing grant opportunities for external entities and programs, rather than outlining the organization's own strategic growth initiatives.",
+      "reasoning": "African Diasporic Arts And Educatio Education Inc has stable revenue. While there's a mention of 'leadership development,' it appears to be in the context of external programs, not internal hiring for strategic roles. News indicates they received some grants, but also act as a resource for other grant opportunities, not strongly signaling a need for an external agency for their own growth.",
+      "outreach_subject": "Supporting African Diasporic Arts And Educatio Inc's Mission",
+      "outreach_email": "We acknowledge African Diasporic Arts And Educatio Inc's stable revenue and commitment to leadership development through programs like Trailblazers Tours. While explicit strategic hiring signals are not present, we are impressed by your grant activities. We understand your current focus is on program delivery and supporting external initiatives.",
+      "contact": {
+        "name": "",
+        "email": "",
+        "title": "",
+        "confidence": "not found"
+      }
+    },
+    {
+      "name": "Intercounty Charitable And Educational Education",
+      "score": 30,
+      "data_quality": "strong",
+      "mixed_signal": true,
+      "financial_signal": "Revenue is growing, indicating potential capacity for investment.",
+      "hiring_signal": "The organization explicitly states 'There are no current openings at this time.'",
+      "news_signal": "News pertains to the organization's foundation providing grants to other agencies, rather than its own growth initiatives that would require external agency support.",
+      "reasoning": "Intercounty Charitable And Educational Education shows growing revenue, which typically suggests a capacity for new initiatives. However, their hiring page explicitly states 'no current openings at this time,' which strongly contradicts any immediate need for external agency support. The news focuses on their role as a grant-making foundation, not their own organizational development. This is a mixed signal, with growing revenue but no hiring activity.",
+      "outreach_subject": "Following Intercounty's Growth and Funding Activities",
+      "outreach_email": "We note Intercounty Charitable And Educational Education's growing revenue, suggesting strong financial health. While we saw no current hiring for strategic roles, we appreciate the work your foundation does in providing funding to other organizations. We understand that current strategic projects may be handled internally.",
+      "contact": {
+        "name": "Dalton Clayton",
+        "email": "dalton.clayton@ieca.coop",
+        "title": "Director of Engineering",
+        "confidence": "verified"
+      }
+    },
+    {
+      "name": "Education Minnesota Osseo Administrative Educational Support",
+      "score": 20,
+      "data_quality": "moderate",
+      "mixed_signal": false,
+      "financial_signal": "Financial trend is unknown, making it difficult to assess investment capacity.",
+      "hiring_signal": "Hiring activity is focused on operational and support roles like 'Substitute - Special Education Educational Support Professionals,' 'Special Education Coordinator,' 'Custodian,' and 'Substitute Teacher,' rather than strategic development or marketing leadership.",
+      "news_signal": "News highlights grant opportunities the organization provides to increase the capacity of community schools, which is an outward-facing program, not an internal growth initiative directly signaling a need for an agency.",
+      "reasoning": "Education Minnesota Osseo's financial data is unknown. Their hiring activity is for support and operational roles within schools, not strategic development or marketing leadership for the organization itself. News reports focus on grants they are making available to other schools, not their own organizational growth strategy, making them a low likelihood for external agency hiring.",
+      "outreach_subject": "Exploring Collaboration with Education Minnesota Osseo's Initiatives",
+      "outreach_email": "We noted Education Minnesota Osseo's focus on supporting community schools through grant opportunities. While financial and strategic hiring signals are unclear, we appreciate your work in capacity building. We anticipate your current focus is on internal program delivery.",
+      "contact": {
+        "name": "",
+        "email": "",
+        "title": "",
+        "confidence": "not found"
+      }
+    },
+    {
+      "name": "Education Minnesota Wem Educational Support Profesionals",
+      "score": 15,
+      "data_quality": "moderate",
+      "mixed_signal": false,
+      "financial_signal": "Financial trend is unknown, making it difficult to assess investment capacity.",
+      "hiring_signal": "The hiring information describes job listings for various educational roles across Minnesota schools or a job board run by the organization, not direct internal hiring for development or marketing leadership within Education Minnesota Wem itself.",
+      "news_signal": "News highlights professional development grants and funding for mentorship programs, indicating support for external educational initiatives rather than internal strategic growth that would necessitate an external agency.",
+      "reasoning": "Education Minnesota Wem's financial data is unknown. The provided hiring information describes a job board for various school positions across Minnesota, not specific internal hiring for strategic development or marketing leadership within their own organization. News signals focus on grants for professional development, not their own growth, suggesting a low likelihood for external agency engagement.",
+      "outreach_subject": "Insights into Educational Initiatives at Education Minnesota Wem",
+      "outreach_email": "We observed Education Minnesota Wem's active support for professional development and mentorship programs in Minnesota. While internal hiring signals are unclear, we appreciate your efforts in connecting educators with opportunities. We anticipate your current focus is on these valuable community programs."
+    },
+    {
+      "name": "Wace Educational Education",
+      "score": 10,
+      "data_quality": "strong",
+      "mixed_signal": false,
+      "financial_signal": "Revenue is declining, suggesting budget constraints.",
+      "hiring_signal": "The provided text describes leadership workshops and programs offered by WACE to other organizations, rather than internal hiring for development or marketing leadership roles within WACE itself. No active hiring detected for relevant roles.",
+      "news_signal": "News mentions research grants and student awards, which are not directly related to the organization's potential need for an external agency for growth or marketing.",
+      "reasoning": "Wace Educational Education is experiencing declining revenue. The 'hiring' information describes professional development workshops and programs WACE offers, not positions they are currently hiring for internally, especially not for development or marketing leadership. News focuses on grants for others, not internal growth or strategic initiatives, making them a poor fit for outreach.",
+      "outreach_subject": "Regarding Wace Educational Education's Funding Landscape",
+      "outreach_email": "We noticed Wace Educational Education's declining revenue trend. Our analysis of available information does not indicate current initiatives for external agency partnerships in development or marketing. We understand budget priorities are critical during such periods."
+    },
+    {
+      "name": "Centro Biblico Educativo Bible Education Inc",
+      "score": 10,
+      "data_quality": "moderate",
+      "mixed_signal": false,
+      "financial_signal": "Financial trend is unknown, making it difficult to assess investment capacity.",
+      "hiring_signal": "The hiring section implies no current open positions, stating applications are kept on file should an opening arise. The rest of the text seems largely irrelevant to their internal hiring.",
+      "news_signal": "News about RECongress 2026, sponsored by the Archdiocese of Los Angeles, does not clearly indicate Centro Biblico Educativo's direct involvement or specific strategic initiatives that would require external agency support.",
+      "reasoning": "Centro Biblico Educativo's financial status is unknown. Their hiring information indicates no current open positions, which suggests no immediate need for new personnel or external strategic partners. News signals are vague and do not point to any internal growth or development initiatives. This combination indicates a very low likelihood of needing an external agency.",
+      "outreach_subject": "Exploring Support for Educational Missions",
+      "outreach_email": "We understand Centro Biblico Educativo's focus on its core educational mission. Our analysis shows no current hiring for development or marketing leadership, and financial data is unavailable. We appreciate the dedication to your mission within the community."
+    },
+    {
+      "name": "Goodhue County Education District Educational Support Pro",
+      "score": 10,
+      "data_quality": "weak",
+      "mixed_signal": false,
+      "financial_signal": "Financial trend is unknown, making it difficult to assess investment capacity.",
+      "hiring_signal": "Hiring activity is focused on general support staff roles such as 'Building Support Specialists, COTAs, Interpreters, LPNs' for the upcoming school year, not strategic development or marketing leadership.",
+      "news_signal": "News about a casebook for consulting interviews is generic and does not relate to the organization's specific growth or strategic initiatives.",
+      "reasoning": "Goodhue County Education District has unknown financial data. Their current hiring focuses on general educational support staff, not strategic development or marketing leadership. The news signal is irrelevant to the organization's potential need for external agency support. This indicates a very low likelihood of needing an external agency.",
+      "outreach_subject": "Supporting Educational Support Services in Goodhue County",
+      "outreach_email": "We recognize Goodhue County Education District's commitment to supporting students and families through various staff positions. While specific strategic growth initiatives are not apparent, we appreciate your dedication to educational support. We understand your focus is on direct service delivery."
+    },
+    {
+      "name": "Karen K St John Charitable Educatio Education Trust",
+      "score": 5,
+      "data_quality": "strong",
+      "mixed_signal": false,
+      "financial_signal": "Revenue is declining, suggesting budget constraints.",
+      "hiring_signal": "The provided text lists organizations associated with 'Project 2025,' which is a political/policy initiative, and does not represent internal hiring for development or marketing leadership roles within the trust.",
+      "news_signal": "The 'news' signal consists of a financial statement breakdown, showing income sources but not indicating strategic growth initiatives or external engagements that would require an agency.",
+      "reasoning": "Karen K St John Charitable Education Trust is experiencing declining revenue, which limits capacity for new investments. The 'hiring' information is irrelevant, listing organizations related to a political project rather than actual job openings. The 'news' signal is merely a financial statement snippet, offering no insight into strategic initiatives. This combination indicates a very low likelihood of needing an external agency.",
+      "outreach_subject": "Regarding Karen K St John Charitable Education Trust's Financial Overview",
+      "outreach_email": "We observed Karen K St John Charitable Education Trust's declining revenue and note the detailed financial breakdown in your public records. Our analysis does not indicate current strategic hiring or new initiatives for external agency support. We understand your focus is on prudent financial management."
+    }
+  ]
+}

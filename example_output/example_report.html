@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuller Focus Signal Report</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; color: #e5e5e5; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.6; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { margin-bottom: 40px; border-bottom: 1px solid #1f1f1f; padding-bottom: 24px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .brand { font-size: 12px; color: #555; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
+  .query-text { font-size: 20px; color: #fff; font-weight: 500; }
+  .meta { font-size: 12px; color: #555; margin-top: 8px; }
+  .export-btn { background: #1f1f1f; color: #aaa; border: 1px solid #2a2a2a; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+  .export-btn:hover { background: #2a2a2a; color: #fff; }
+  .card { background: #111; border: 1px solid #1f1f1f; border-radius: 10px; padding: 24px; margin-bottom: 16px; }
+  .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+  .org-name { font-size: 16px; font-weight: 600; color: #fff; }
+  .org-location { font-size: 12px; color: #555; margin-top: 4px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .score-badge { font-size: 32px; font-weight: 700; }
+  .quality-badge { font-size: 11px; padding: 1px 7px; border-radius: 4px; border: 1px solid; }
+  .mixed-badge { font-size: 11px; padding: 1px 7px; border-radius: 4px; border: 1px solid #7c3aed; color: #a78bfa; }
+  .pills { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .pill { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 500; }
+  .pill-on { background: #1a2a1a; color: #4ade80; border: 1px solid #2a3a2a; }
+  .pill-off { background: #1a1a1a; color: #555; border: 1px solid #222; }
+  .signals { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+  .signal-row { display: flex; gap: 12px; font-size: 13px; }
+  .signal-label { color: #555; width: 70px; flex-shrink: 0; }
+  .reasoning { font-size: 13px; color: #999; border-left: 2px solid #1f1f1f; padding-left: 12px; margin-bottom: 16px; }
+  .contact { font-size: 13px; margin-bottom: 16px; display: flex; flex-direction: column; gap: 2px; }
+  .contact-name { color: #ccc; }
+  .contact-title { color: #555; font-size: 12px; }
+  .contact-email { color: #aaa; }
+  .contact-missing { color: #444; }
+  .badge { font-size: 11px; padding: 1px 6px; border-radius: 4px; background: #111; }
+  .email-section { background: #0d0d0d; border: 1px solid #1a1a1a; border-radius: 6px; padding: 16px; }
+  .email-subject { font-size: 12px; color: #555; margin-bottom: 8px; }
+  .email-body { font-size: 13px; color: #aaa; white-space: pre-wrap; margin-bottom: 12px; }
+  .copy-btn { background: #1f1f1f; color: #aaa; border: 1px solid #2a2a2a; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+  .copy-btn:hover { background: #2a2a2a; color: #fff; }
+  .copy-btn.copied { color: #4ade80; border-color: #2a3a2a; }
+  .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #1a1a1a; font-size: 11px; color: #333; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="header-top">
+      <div>
+        <div class="brand">Fuller Focus Signal Agent</div>
+        <div class="query-text">"Find nonprofits recently hiring fundraising leadership"</div>
+        <div class="meta">10 organisations found - 09 Apr 2026 23:37</div>
+      </div>
+      <button class="export-btn" onclick="exportCSV()">Export CSV</button>
+    </div>
+  </div>
+  <div class="card">
+        <div class="card-header">
+            <div>
+                <div class="org-name">1. Feeding America</div>
+                <div class="org-location">Chicago, IL <span class="quality-badge" style="border-color:#4ade80;color:#4ade80">data: strong</span> </div>
+            </div>
+            <div class="score-badge" style="color:#4ade80">91</div>
+        </div>
+        <div class="pills">
+            <span class="pill pill-on">Revenue</span>
+            <span class="pill pill-on">Hiring</span>
+            <span class="pill pill-on">Activity</span>
+        </div>
+        <div class="signals">
+            <div class="signal-row"><span class="signal-label">Financial</span><span>Revenue grew from $3.8B to $4.9B over three years, a 29% increase.</span></div>
+            <div class="signal-row"><span class="signal-label">Hiring</span><span>Actively hiring a Vice President of Development and a Director of Major Gifts as of March 2026.</span></div>
+            <div class="signal-row"><span class="signal-label">Activity</span><span>Launched a national hunger relief campaign in February 2026 targeting 50M Americans.</span></div>
+        </div>
+        <div class="reasoning">All three signals are converging in Q1 2026. Revenue growth is strong and sustained, two senior development hires are open simultaneously, and a major campaign just launched. This combination means budget is being deployed and external agency support is likely being evaluated.</div>
+        <div class="contact">
+            <span class="contact-name">Katie Fitzgerald <span class="contact-title">Chief Executive Officer</span></span>
+            <span class="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b0dbd6d9c4cad7d5c2d1dcd4f0d6d5d5d4d9ded7d1ddd5c2d9d3d19edfc2d7">[email&#160;protected]</a> <span class="badge" style="color:#facc15">likely</span></span>
+        </div>
+        <div class="email-section">
+            <div class="email-subject">Subject: Helping Feeding America scale your February campaign</div>
+            <div class="email-body" id="email-0">Hi [Name], I noticed Feeding America recently launched your national hunger relief campaign and is actively building out your development team. We work with nonprofits at exactly this stage to amplify campaign reach and support new leadership transitions. Would a 20-minute call this week make sense?</div>
+            <button class="copy-btn" onclick="copyEmail(0, this)">Copy email</button>
+        </div>
+    </div><div class="card">
+        <div class="card-header">
+            <div>
+                <div class="org-name">2. United Way Worldwide</div>
+                <div class="org-location">Washington, DC <span class="quality-badge" style="border-color:#4ade80;color:#4ade80">data: strong</span> </div>
+            </div>
+            <div class="score-badge" style="color:#4ade80">84</div>
+        </div>
+        <div class="pills">
+            <span class="pill pill-on">Revenue</span>
+            <span class="pill pill-on">Hiring</span>
+            <span class="pill pill-on">Activity</span>
+        </div>
+        <div class="signals">
+            <div class="signal-row"><span class="signal-label">Financial</span><span>Revenue increased 18% over three years, from $3.9B to $4.6B.</span></div>
+            <div class="signal-row"><span class="signal-label">Hiring</span><span>Hiring a Chief Development Officer and two regional fundraising managers in Q1 2026.</span></div>
+            <div class="signal-row"><span class="signal-label">Activity</span><span>Announced a new five-year community impact strategy in January 2026.</span></div>
+        </div>
+        <div class="reasoning">A Chief Development Officer hire is one of the strongest buying signals that exists. It means new leadership is coming in, reviewing all vendors and agency relationships, and typically brings budget to spend. The new five-year strategy confirms budget allocation is underway.</div>
+        <div class="contact">
+            <span class="contact-name">Angela Williams <span class="contact-title">President and CEO</span></span>
+            <span class="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ccadbba5a0a0a5ada1bf8cb9a2a5b8a9a8bbadb5e2a3beab">[email&#160;protected]</a> <span class="badge" style="color:#4ade80">verified</span></span>
+        </div>
+        <div class="email-section">
+            <div class="email-subject">Subject: Supporting United Way's new five-year strategy launch</div>
+            <div class="email-body" id="email-1">Hi [Name], Congratulations on the new five-year community impact strategy. We have seen that moments like this, especially alongside a CDO search, are when organisations like United Way benefit most from external support on positioning and donor communications. Happy to share how we have helped similar organisations if useful.</div>
+            <button class="copy-btn" onclick="copyEmail(1, this)">Copy email</button>
+        </div>
+    </div><div class="card">
+        <div class="card-header">
+            <div>
+                <div class="org-name">3. American Red Cross</div>
+                <div class="org-location">Washington, DC <span class="quality-badge" style="border-color:#4ade80;color:#4ade80">data: strong</span> <span class="mixed-badge">mixed signals</span></div>
+            </div>
+            <div class="score-badge" style="color:#4ade80">78</div>
+        </div>
+        <div class="pills">
+            <span class="pill pill-on">Revenue</span>
+            <span class="pill pill-on">Hiring</span>
+            <span class="pill pill-on">Activity</span>
+        </div>
+        <div class="signals">
+            <div class="signal-row"><span class="signal-label">Financial</span><span>Revenue trend is stable with a slight 6% increase over three years.</span></div>
+            <div class="signal-row"><span class="signal-label">Hiring</span><span>Posted a Director of Digital Fundraising role in February 2026.</span></div>
+            <div class="signal-row"><span class="signal-label">Activity</span><span>Launched an emergency preparedness awareness campaign across 12 states in March 2026.</span></div>
+        </div>
+        <div class="reasoning">Revenue has declined slightly but an active Director of Digital Fundraising hire suggests the org is investing in growth. Mixed signal: this could indicate either a distressed org making a last push, or a healthy org shifting strategy. Treat as moderate priority and monitor for further hiring activity.</div>
+        <div class="contact">
+            <span class="contact-name">Gail McGovern <span class="contact-title">President and CEO</span></span>
+            <span class="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e7808a84808891829589a79582838495889494c9889580">[email&#160;protected]</a> <span class="badge" style="color:#facc15">likely</span></span>
+        </div>
+        <div class="email-section">
+            <div class="email-subject">Subject: Scaling American Red Cross digital fundraising in 2026</div>
+            <div class="email-body" id="email-2">Hi [Name], I saw the American Red Cross is building out its digital fundraising capability and has an active campaign running across 12 states. We specialise in helping organisations at this exact inflection point maximise digital donor acquisition. Would love to share a few ideas specific to your current campaign.</div>
+            <button class="copy-btn" onclick="copyEmail(2, this)">Copy email</button>
+        </div>
+    </div><div class="card">
+        <div class="card-header">
+            <div>
+                <div class="org-name">4. Habitat for Humanity International</div>
+                <div class="org-location">Atlanta, GA <span class="quality-badge" style="border-color:#facc15;color:#facc15">data: moderate</span> </div>
+            </div>
+            <div class="score-badge" style="color:#facc15">71</div>
+        </div>
+        <div class="pills">
+            <span class="pill pill-on">Revenue</span>
+            <span class="pill pill-on">Hiring</span>
+            <span class="pill pill-on">Activity</span>
+        </div>
+        <div class="signals">
+            <div class="signal-row"><span class="signal-label">Financial</span><span>Revenue grew 14% over three years, driven by increased individual giving.</span></div>
+            <div class="signal-row"><span class="signal-label">Hiring</span><span>Hiring a Senior Manager of Corporate Partnerships in Atlanta as of January 2026.</span></div>
+            <div class="signal-row"><span class="signal-label">Activity</span><span>Announced expansion into 15 new cities with a $200M build programme in late 2025.</span></div>
+        </div>
+        <div class="reasoning">Corporate partnership hiring combined with a $200M expansion programme is a clear signal that Habitat is actively seeking agency support for partner acquisition and campaign execution. Revenue growth supports budget availability.</div>
+        <div class="contact">
+            <span class="contact-name">Jonathan Reckford <span class="contact-title">Chief Executive Officer</span></span>
+            <span class="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="523820373139343d2036123a33303b2633267c3d2035">[email&#160;protected]</a> <span class="badge" style="color:#facc15">likely</span></span>
+        </div>
+        <div class="email-section">
+            <div class="email-subject">Subject: Supporting Habitat's 15-city expansion in 2026</div>
+            <div class="email-body" id="email-3">Hi [Name], The announcement of Habitat for Humanity's 15-city expansion and the new corporate partnerships role caught my attention. Organisations scaling at this pace often benefit from external support on partner outreach strategy and campaign materials. Happy to share what has worked for similar expansion programmes.</div>
+            <button class="copy-btn" onclick="copyEmail(3, this)">Copy email</button>
+        </div>
+    </div><div class="card">
+        <div class="card-header">
+            <div>
+                <div class="org-name">5. No Kid Hungry</div>
+                <div class="org-location">Washington, DC <span class="quality-badge" style="border-color:#facc15;color:#facc15">data: moderate</span> </div>
+            </div>
+            <div class="score-badge" style="color:#facc15">63</div>
+        </div>
+        <div class="pills">
+            <span class="pill pill-on">Revenue</span>
+            <span class="pill pill-on">Hiring</span>
+            <span class="pill pill-on">Activity</span>
+        </div>
+        <div class="signals">
+            <div class="signal-row"><span class="signal-label">Financial</span><span>Revenue grew 22% in the last two years following a major grant.</span></div>
+            <div class="signal-row"><span class="signal-label">Hiring</span><span>Hiring a Development Associate and Grants Manager simultaneously in February 2026.</span></div>
+            <div class="signal-row"><span class="signal-label">Activity</span><span>Launched a summer meals programme targeting 11M children in March 2026.</span></div>
+        </div>
+        <div class="reasoning">Dual hiring in development alongside a major programme launch suggests the team is growing to support increased activity. The summer meals launch is time-sensitive and often prompts orgs to seek external marketing support quickly.</div>
+        <div class="contact contact-missing">Contact not found</div>
+        <div class="email-section">
+            <div class="email-subject">Subject: Amplifying No Kid Hungry's summer meals programme</div>
+            <div class="email-body" id="email-4">Hi [Name], The summer meals programme launch is a great moment and the timeline is tight. We have helped similar organisations turn programme launches into major donor and media moments. If you are looking for support on the communications or fundraising side, we would love to help.</div>
+            <button class="copy-btn" onclick="copyEmail(4, this)">Copy email</button>
+        </div>
+    </div><div class="card">
+        <div class="card-header">
+            <div>
+                <div class="org-name">6. Boys and Girls Clubs of America</div>
+                <div class="org-location">Atlanta, GA <span class="quality-badge" style="border-color:#facc15;color:#facc15">data: moderate</span> </div>
+            </div>
+            <div class="score-badge" style="color:#facc15">58</div>
+        </div>
+        <div class="pills">
+            <span class="pill pill-on">Revenue</span>
+            <span class="pill pill-on">Hiring</span>
+            <span class="pill pill-on">Activity</span>
+        </div>
+        <div class="signals">
+            <div class="signal-row"><span class="signal-label">Financial</span><span>Revenue stable over three years, slight decline in 2024 followed by recovery.</span></div>
+            <div class="signal-row"><span class="signal-label">Hiring</span><span>No recent senior fundraising hires detected.</span></div>
+            <div class="signal-row"><span class="signal-label">Activity</span><span>Announced a new youth mental health initiative in January 2026.</span></div>
+        </div>
+        <div class="reasoning">The mental health initiative is a strong programme signal but without hiring activity or revenue growth the buying intent score is moderate. Worth monitoring for a CDO or development hire in the next quarter.</div>
+        <div class="contact">
+            <span class="contact-name">Jim Clark <span class="contact-title">President and CEO</span></span>
+            <span class="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ef858c838e9d84af8d888c8ec1809d88">[email&#160;protected]</a> <span class="badge" style="color:#facc15">likely</span></span>
+        </div>
+        <div class="email-section">
+            <div class="email-subject">Subject: Supporting the Boys and Girls Clubs mental health initiative</div>
+            <div class="email-body" id="email-5">Hi [Name], The new youth mental health initiative is an important and timely programme. We work with youth-focused nonprofits on campaign strategy and donor communications and would be glad to share a few ideas around how to position this initiative for maximum fundraising impact.</div>
+            <button class="copy-btn" onclick="copyEmail(5, this)">Copy email</button>
+        </div>
+    </div><div class="card">
+        <div class="card-header">
+            <div>
+                <div class="org-name">7. CARE USA</div>
+                <div class="org-location">Atlanta, GA <span class="quality-badge" style="border-color:#f87171;color:#f87171">data: weak</span> </div>
+            </div>
+            <div class="score-badge" style="color:#facc15">54</div>
+        </div>
+        <div class="pills">
+            <span class="pill pill-on">Revenue</span>
+            <span class="pill pill-on">Hiring</span>
+            <span class="pill pill-on">Activity</span>
+        </div>
+        <div class="signals">
+            <div class="signal-row"><span class="signal-label">Financial</span><span>Revenue grew 9% over three years, largely from institutional funding.</span></div>
+            <div class="signal-row"><span class="signal-label">Hiring</span><span>Hiring a Digital Marketing Manager in February 2026.</span></div>
+            <div class="signal-row"><span class="signal-label">Activity</span><span>Launched an emergency response appeal for East Africa in March 2026.</span></div>
+        </div>
+        <div class="reasoning">A digital marketing hire alongside an active emergency appeal suggests CARE is investing in digital donor acquisition. Emergency appeals have a short window and often prompt rapid agency engagement.</div>
+        <div class="contact">
+            <span class="contact-name">Michelle Nunn <span class="contact-title">President and CEO</span></span>
+            <span class="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1d70736873735d7e7c6f7833726f7a">[email&#160;protected]</a> <span class="badge" style="color:#facc15">likely</span></span>
+        </div>
+        <div class="email-section">
+            <div class="email-subject">Subject: Helping CARE USA maximise the East Africa appeal</div>
+            <div class="email-body" id="email-6">Hi [Name], Emergency appeals have a narrow window to convert donor intent into action. We have experience helping international nonprofits maximise digital giving during active appeals and would be glad to share what has driven the best results. Happy to connect this week if useful.</div>
+            <button class="copy-btn" onclick="copyEmail(6, this)">Copy email</button>
+        </div>
+    </div><div class="card">
+        <div class="card-header">
+            <div>
+                <div class="org-name">8. The Nature Conservancy</div>
+                <div class="org-location">Arlington, VA <span class="quality-badge" style="border-color:#f87171;color:#f87171">data: weak</span> </div>
+            </div>
+            <div class="score-badge" style="color:#f87171">49</div>
+        </div>
+        <div class="pills">
+            <span class="pill pill-on">Revenue</span>
+            <span class="pill pill-on">Hiring</span>
+            <span class="pill pill-on">Activity</span>
+        </div>
+        <div class="signals">
+            <div class="signal-row"><span class="signal-label">Financial</span><span>Revenue is strong at $1.2B but trend is flat over three years.</span></div>
+            <div class="signal-row"><span class="signal-label">Hiring</span><span>No active senior fundraising or development hires detected.</span></div>
+            <div class="signal-row"><span class="signal-label">Activity</span><span>Published annual conservation report in February 2026, no active campaign detected.</span></div>
+        </div>
+        <div class="reasoning">Strong organisation but no active buying signals at this time. Flat revenue and no hiring or campaign activity suggests a maintenance phase rather than a growth phase. Low priority for outreach now but worth revisiting in Q3.</div>
+        <div class="contact">
+            <span class="contact-name">Jennifer Morris <span class="contact-title">Chief Executive Officer</span></span>
+            <span class="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4d2720223f3f243e0d39232e63223f2a">[email&#160;protected]</a> <span class="badge" style="color:#facc15">likely</span></span>
+        </div>
+        <div class="email-section">
+            <div class="email-subject">Subject: Fuller Focus introduction for The Nature Conservancy</div>
+            <div class="email-body" id="email-7">Hi [Name], We work with large conservation nonprofits on donor engagement and major gifts strategy. I wanted to reach out to introduce Fuller Focus and share what we have been working on with similar organisations. Happy to connect at a time that works for you.</div>
+            <button class="copy-btn" onclick="copyEmail(7, this)">Copy email</button>
+        </div>
+    </div><div class="card">
+        <div class="card-header">
+            <div>
+                <div class="org-name">9. Save the Children US</div>
+                <div class="org-location">Fairfield, CT <span class="quality-badge" style="border-color:#f87171;color:#f87171">data: weak</span> </div>
+            </div>
+            <div class="score-badge" style="color:#f87171">44</div>
+        </div>
+        <div class="pills">
+            <span class="pill pill-on">Revenue</span>
+            <span class="pill pill-on">Hiring</span>
+            <span class="pill pill-on">Activity</span>
+        </div>
+        <div class="signals">
+            <div class="signal-row"><span class="signal-label">Financial</span><span>Revenue declined 7% over three years, recovering slightly in 2025.</span></div>
+            <div class="signal-row"><span class="signal-label">Hiring</span><span>No recent fundraising hires detected.</span></div>
+            <div class="signal-row"><span class="signal-label">Activity</span><span>Participated in a coalition announcement on child poverty in February 2026.</span></div>
+        </div>
+        <div class="reasoning">Revenue decline and no hiring activity are negative signals. The coalition announcement shows programme activity but not buying intent. Low priority for immediate outreach.</div>
+        <div class="contact contact-missing">Contact not found</div>
+        <div class="email-section">
+            <div class="email-subject">Subject: Fuller Focus introduction for Save the Children</div>
+            <div class="email-body" id="email-8">Hi [Name], Save the Children's work on child poverty has been impressive and the recent coalition announcement is an important step. We support nonprofits with donor communications and fundraising strategy and would welcome the chance to share what we have been doing with similar organisations.</div>
+            <button class="copy-btn" onclick="copyEmail(8, this)">Copy email</button>
+        </div>
+    </div><div class="card">
+        <div class="card-header">
+            <div>
+                <div class="org-name">10. Doctors Without Borders USA</div>
+                <div class="org-location">New York, NY <span class="quality-badge" style="border-color:#f87171;color:#f87171">data: weak</span> </div>
+            </div>
+            <div class="score-badge" style="color:#f87171">38</div>
+        </div>
+        <div class="pills">
+            <span class="pill pill-on">Revenue</span>
+            <span class="pill pill-on">Hiring</span>
+            <span class="pill pill-on">Activity</span>
+        </div>
+        <div class="signals">
+            <div class="signal-row"><span class="signal-label">Financial</span><span>Revenue stable at approximately $500M, no significant growth trend.</span></div>
+            <div class="signal-row"><span class="signal-label">Hiring</span><span>No recent development or fundraising hires detected.</span></div>
+            <div class="signal-row"><span class="signal-label">Activity</span><span>Issued emergency response updates for ongoing conflicts but no new campaign launched.</span></div>
+        </div>
+        <div class="reasoning">Stable and well-resourced organisation but no active buying signals. MSF has strong internal fundraising capability. Low probability of external agency engagement in the near term.</div>
+        <div class="contact">
+            <span class="contact-name">Avril Benoît <span class="contact-title">Executive Director</span></span>
+            <span class="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="accdcec9c2c3c5d8ecc1dfca82c3decb">[email&#160;protected]</a> <span class="badge" style="color:#facc15">likely</span></span>
+        </div>
+        <div class="email-section">
+            <div class="email-subject">Subject: Fuller Focus introduction for MSF USA</div>
+            <div class="email-body" id="email-9">Hi [Name], We work with global health nonprofits on donor acquisition and emergency appeal strategy. I wanted to introduce Fuller Focus and share a few ideas on how organisations like MSF have scaled individual giving during active response periods. Happy to connect when useful.</div>
+            <button class="copy-btn" onclick="copyEmail(9, this)">Copy email</button>
+        </div>
+    </div>
+  <div class="footer">Fuller Focus Signal Agent v1</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function copyEmail(index, btn) {
+  const el = document.getElementById('email-' + index);
+  navigator.clipboard.writeText(el.innerText).then(() => {
+    btn.textContent = 'Copied';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy email'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+const csvData = [{"name": "Feeding America", "score": 91, "data_quality": "strong", "mixed_signal": false, "email": "kfitzgerald@feedingamerica.org", "confidence": "likely", "reasoning": "All three signals are converging in Q1 2026. Revenue growth is strong and sustained, two senior development hires are open simultaneously, and a major campaign just launched. This combination means budget is being deployed and external agency support is likely being evaluated."}, {"name": "United Way Worldwide", "score": 84, "data_quality": "strong", "mixed_signal": false, "email": "awilliams@unitedway.org", "confidence": "verified", "reasoning": "A Chief Development Officer hire is one of the strongest buying signals that exists. It means new leadership is coming in, reviewing all vendors and agency relationships, and typically brings budget to spend. The new five-year strategy confirms budget allocation is underway."}, {"name": "American Red Cross", "score": 78, "data_quality": "strong", "mixed_signal": true, "email": "gmcgovern@redcross.org", "confidence": "likely", "reasoning": "Revenue has declined slightly but an active Director of Digital Fundraising hire suggests the org is investing in growth. Mixed signal: this could indicate either a distressed org making a last push, or a healthy org shifting strategy. Treat as moderate priority and monitor for further hiring activity."}, {"name": "Habitat for Humanity International", "score": 71, "data_quality": "moderate", "mixed_signal": false, "email": "jreckford@habitat.org", "confidence": "likely", "reasoning": "Corporate partnership hiring combined with a $200M expansion programme is a clear signal that Habitat is actively seeking agency support for partner acquisition and campaign execution. Revenue growth supports budget availability."}, {"name": "No Kid Hungry", "score": 63, "data_quality": "moderate", "mixed_signal": false, "email": "", "confidence": "not found", "reasoning": "Dual hiring in development alongside a major programme launch suggests the team is growing to support increased activity. The summer meals launch is time-sensitive and often prompts orgs to seek external marketing support quickly."}, {"name": "Boys and Girls Clubs of America", "score": 58, "data_quality": "moderate", "mixed_signal": false, "email": "jclark@bgca.org", "confidence": "likely", "reasoning": "The mental health initiative is a strong programme signal but without hiring activity or revenue growth the buying intent score is moderate. Worth monitoring for a CDO or development hire in the next quarter."}, {"name": "CARE USA", "score": 54, "data_quality": "weak", "mixed_signal": false, "email": "mnunn@care.org", "confidence": "likely", "reasoning": "A digital marketing hire alongside an active emergency appeal suggests CARE is investing in digital donor acquisition. Emergency appeals have a short window and often prompt rapid agency engagement."}, {"name": "The Nature Conservancy", "score": 49, "data_quality": "weak", "mixed_signal": false, "email": "jmorris@tnc.org", "confidence": "likely", "reasoning": "Strong organisation but no active buying signals at this time. Flat revenue and no hiring or campaign activity suggests a maintenance phase rather than a growth phase. Low priority for outreach now but worth revisiting in Q3."}, {"name": "Save the Children US", "score": 44, "data_quality": "weak", "mixed_signal": false, "email": "", "confidence": "not found", "reasoning": "Revenue decline and no hiring activi

@@ -1,0 +1,197 @@
+{
+  "query": "Find nonprofits recently hiring fundraising leadership",
+  "timestamp": "20260410_093042",
+  "results": [
+    {
+      "name": "Feeding America",
+      "city": "Chicago",
+      "state": "IL",
+      "score": 91,
+      "financial_signal": "Revenue grew from $3.8B to $4.9B over three years, a 29% increase.",
+      "hiring_signal": "Actively hiring a Vice President of Development and a Director of Major Gifts as of March 2026.",
+      "news_signal": "Launched a national hunger relief campaign in February 2026 targeting 50M Americans.",
+      "reasoning": "All three signals are converging in Q1 2026. Revenue growth is strong and sustained, two senior development hires are open simultaneously, and a major campaign just launched. This combination means budget is being deployed and external agency support is likely being evaluated.",
+      "outreach_subject": "Helping Feeding America scale your February campaign",
+      "outreach_email": "Hi [Name], I noticed Feeding America recently launched your national hunger relief campaign and is actively building out your development team. We work with nonprofits at exactly this stage to amplify campaign reach and support new leadership transitions. Would a 20-minute call this week make sense?",
+      "contact": {
+        "name": "Katie Fitzgerald",
+        "email": "kfitzgerald@feedingamerica.org",
+        "title": "Chief Executive Officer",
+        "confidence": "likely"
+      },
+      "data_quality": "strong"
+    },
+    {
+      "name": "United Way Worldwide",
+      "city": "Washington",
+      "state": "DC",
+      "score": 84,
+      "financial_signal": "Revenue increased 18% over three years, from $3.9B to $4.6B.",
+      "hiring_signal": "Hiring a Chief Development Officer and two regional fundraising managers in Q1 2026.",
+      "news_signal": "Announced a new five-year community impact strategy in January 2026.",
+      "reasoning": "A Chief Development Officer hire is one of the strongest buying signals that exists. It means new leadership is coming in, reviewing all vendors and agency relationships, and typically brings budget to spend. The new five-year strategy confirms budget allocation is underway.",
+      "outreach_subject": "Supporting United Way's new five-year strategy launch",
+      "outreach_email": "Hi [Name], Congratulations on the new five-year community impact strategy. We have seen that moments like this, especially alongside a CDO search, are when organisations like United Way benefit most from external support on positioning and donor communications. Happy to share how we have helped similar organisations if useful.",
+      "contact": {
+        "name": "Angela Williams",
+        "email": "awilliams@unitedway.org",
+        "title": "President and CEO",
+        "confidence": "verified"
+      },
+      "data_quality": "strong"
+    },
+    {
+      "name": "American Red Cross",
+      "city": "Washington",
+      "state": "DC",
+      "score": 78,
+      "financial_signal": "Revenue trend is stable with a slight 6% increase over three years.",
+      "hiring_signal": "Posted a Director of Digital Fundraising role in February 2026.",
+      "news_signal": "Launched an emergency preparedness awareness campaign across 12 states in March 2026.",
+      "reasoning": "Revenue has declined slightly but an active Director of Digital Fundraising hire suggests the org is investing in growth. Mixed signal: this could indicate either a distressed org making a last push, or a healthy org shifting strategy. Treat as moderate priority and monitor for further hiring activity.",
+      "outreach_subject": "Scaling American Red Cross digital fundraising in 2026",
+      "outreach_email": "Hi [Name], I saw the American Red Cross is building out its digital fundraising capability and has an active campaign running across 12 states. We specialise in helping organisations at this exact inflection point maximise digital donor acquisition. Would love to share a few ideas specific to your current campaign.",
+      "contact": {
+        "name": "Gail McGovern",
+        "email": "gmcgovern@redcross.org",
+        "title": "President and CEO",
+        "confidence": "likely"
+      },
+      "data_quality": "strong",
+      "mixed_signal": true
+    },
+    {
+      "name": "Habitat for Humanity International",
+      "city": "Atlanta",
+      "state": "GA",
+      "score": 71,
+      "financial_signal": "Revenue grew 14% over three years, driven by increased individual giving.",
+      "hiring_signal": "Hiring a Senior Manager of Corporate Partnerships in Atlanta as of January 2026.",
+      "news_signal": "Announced expansion into 15 new cities with a $200M build programme in late 2025.",
+      "reasoning": "Corporate partnership hiring combined with a $200M expansion programme is a clear signal that Habitat is actively seeking agency support for partner acquisition and campaign execution. Revenue growth supports budget availability.",
+      "outreach_subject": "Supporting Habitat's 15-city expansion in 2026",
+      "outreach_email": "Hi [Name], The announcement of Habitat for Humanity's 15-city expansion and the new corporate partnerships role caught my attention. Organisations scaling at this pace often benefit from external support on partner outreach strategy and campaign materials. Happy to share what has worked for similar expansion programmes.",
+      "contact": {
+        "name": "Jonathan Reckford",
+        "email": "jreckford@habitat.org",
+        "title": "Chief Executive Officer",
+        "confidence": "likely"
+      },
+      "data_quality": "moderate"
+    },
+    {
+      "name": "No Kid Hungry",
+      "city": "Washington",
+      "state": "DC",
+      "score": 63,
+      "financial_signal": "Revenue grew 22% in the last two years following a major grant.",
+      "hiring_signal": "Hiring a Development Associate and Grants Manager simultaneously in February 2026.",
+      "news_signal": "Launched a summer meals programme targeting 11M children in March 2026.",
+      "reasoning": "Dual hiring in development alongside a major programme launch suggests the team is growing to support increased activity. The summer meals launch is time-sensitive and often prompts orgs to seek external marketing support quickly.",
+      "outreach_subject": "Amplifying No Kid Hungry's summer meals programme",
+      "outreach_email": "Hi [Name], The summer meals programme launch is a great moment and the timeline is tight. We have helped similar organisations turn programme launches into major donor and media moments. If you are looking for support on the communications or fundraising side, we would love to help.",
+      "contact": {
+        "name": "",
+        "email": "",
+        "title": "",
+        "confidence": "not found"
+      },
+      "data_quality": "moderate"
+    },
+    {
+      "name": "Boys and Girls Clubs of America",
+      "city": "Atlanta",
+      "state": "GA",
+      "score": 58,
+      "financial_signal": "Revenue stable over three years, slight decline in 2024 followed by recovery.",
+      "hiring_signal": "No recent senior fundraising hires detected.",
+      "news_signal": "Announced a new youth mental health initiative in January 2026.",
+      "reasoning": "The mental health initiative is a strong programme signal but without hiring activity or revenue growth the buying intent score is moderate. Worth monitoring for a CDO or development hire in the next quarter.",
+      "outreach_subject": "Supporting the Boys and Girls Clubs mental health initiative",
+      "outreach_email": "Hi [Name], The new youth mental health initiative is an important and timely programme. We work with youth-focused nonprofits on campaign strategy and donor communications and would be glad to share a few ideas around how to position this initiative for maximum fundraising impact.",
+      "contact": {
+        "name": "Jim Clark",
+        "email": "jclark@bgca.org",
+        "title": "President and CEO",
+        "confidence": "likely"
+      },
+      "data_quality": "moderate"
+    },
+    {
+      "name": "CARE USA",
+      "city": "Atlanta",
+      "state": "GA",
+      "score": 54,
+      "financial_signal": "Revenue grew 9% over three years, largely from institutional funding.",
+      "hiring_signal": "Hiring a Digital Marketing Manager in February 2026.",
+      "news_signal": "Launched an emergency response appeal for East Africa in March 2026.",
+      "reasoning": "A digital marketing hire alongside an active emergency appeal suggests CARE is investing in digital donor acquisition. Emergency appeals have a short window and often prompt rapid agency engagement.",
+      "outreach_subject": "Helping CARE USA maximise the East Africa appeal",
+      "outreach_email": "Hi [Name], Emergency appeals have a narrow window to convert donor intent into action. We have experience helping international nonprofits maximise digital giving during active appeals and would be glad to share what has driven the best results. Happy to connect this week if useful.",
+      "contact": {
+        "name": "Michelle Nunn",
+        "email": "mnunn@care.org",
+        "title": "President and CEO",
+        "confidence": "likely"
+      },
+      "data_quality": "weak"
+    },
+    {
+      "name": "The Nature Conservancy",
+      "city": "Arlington",
+      "state": "VA",
+      "score": 49,
+      "financial_signal": "Revenue is strong at $1.2B but trend is flat over three years.",
+      "hiring_signal": "No active senior fundraising or development hires detected.",
+      "news_signal": "Published annual conservation report in February 2026, no active campaign detected.",
+      "reasoning": "Strong organisation but no active buying signals at this time. Flat revenue and no hiring or campaign activity suggests a maintenance phase rather than a growth phase. Low priority for outreach now but worth revisiting in Q3.",
+      "outreach_subject": "Fuller Focus introduction for The Nature Conservancy",
+      "outreach_email": "Hi [Name], We work with large conservation nonprofits on donor engagement and major gifts strategy. I wanted to reach out to introduce Fuller Focus and share what we have been working on with similar organisations. Happy to connect at a time that works for you.",
+      "contact": {
+        "name": "Jennifer Morris",
+        "email": "jmorris@tnc.org",
+        "title": "Chief Executive Officer",
+        "confidence": "likely"
+      },
+      "data_quality": "weak"
+    },
+    {
+      "name": "Save the Children US",
+      "city": "Fairfield",
+      "state": "CT",
+      "score": 44,
+      "financial_signal": "Revenue declined 7% over three years, recovering slightly in 2025.",
+      "hiring_signal": "No recent fundraising hires detected.",
+      "news_signal": "Participated in a coalition announcement on child poverty in February 2026.",
+      "reasoning": "Revenue decline and no hiring activity are negative signals. The coalition announcement shows programme activity but not buying intent. Low priority for immediate outreach.",
+      "outreach_subject": "Fuller Focus introduction for Save the Children",
+      "outreach_email": "Hi [Name], Save the Children's work on child poverty has been impressive and the recent coalition announcement is an important step. We support nonprofits with donor communications and fundraising strategy and would welcome the chance to share what we have been doing with similar organisations.",
+      "contact": {
+        "name": "",
+        "email": "",
+        "title": "",
+        "confidence": "not found"
+      },
+      "data_quality": "weak"
+    },
+    {
+      "name": "Doctors Without Borders USA",
+      "city": "New York",
+      "state": "NY",
+      "score": 38,
+      "financial_signal": "Revenue stable at approximately $500M, no significant growth trend.",
+      "hiring_signal": "No recent development or fundraising hires detected.",
+      "news_signal": "Issued emergency response updates for ongoing conflicts but no new campaign launched.",
+      "reasoning": "Stable and well-resourced organisation but no active buying signals. MSF has strong internal fundraising capability. Low probability of external agency engagement in the near term.",
+      "outreach_subject": "Fuller Focus introduction for MSF USA",
+      "outreach_email": "Hi [Name], We work with global health nonprofits on donor acquisition and emergency appeal strategy. I wanted to introduce Fuller Focus and share a few ideas on how organisations like MSF have scaled individual giving during active response periods. Happy to connect when useful.",
+      "contact": {
+        "name": "Avril Beno\u00eet",
+        "email": "abenoit@msf.org",
+        "title": "Executive Director",
+        "confidence": "likely"
+      },
+      "data_quality": "weak"
+    }
+  ]
+}
